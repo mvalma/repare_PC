@@ -64,39 +64,29 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">INTRO<span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#intro">INTRO<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#project" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">LE PROJET</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#nav-tab-1"><span class="item-text">Le projet</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="#nav-tab-2"><span class="item-text">A propos de nous</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="#nav-tab-3"><span class="item-text">Onlineformapro</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#accordionOne">COMMENT CA MARCHE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">LE PROJET</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#services">COMMENT CA MARCHE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#callMe">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projects">NOTRE EQUIPE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projects">ON PARLE DE NOUS</a>
+                    <a class="nav-link page-scroll" href="#callMe">NOUS CONTACTER</a>
                 </li>
 
             </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
@@ -135,7 +125,9 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/intro-office.jpg" alt="alternative">
+
+                        <!--todo grossissement-->
+                        <img class="img-fluid" src="images/RTmanrepair.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -197,7 +189,7 @@
 
 
     <!-- Details 2 -->
-	<div class="tabs">
+	<div id="project" class="tabs">
         <div class="area-1">
             <div class="tabs-container">
                 
@@ -262,33 +254,36 @@
             <div class="item">
                 <div id="headingOne">
                         <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
-                            <span class="circle-numbering">1</span><span class="accordion-title">Etape 1</span>
+                            <span class="circle-numbering">1</span><span class="accordion-title">Vous nous contactez</span>
                         </span>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                    <div class="accordion-body">
+                        Vous nous envoyez un message via le formulaire dédié pour nous faire part de votre demande.                    </div>
                 </div>
             </div> <!-- end of item -->
 
             <div class="item">
                 <div id="headingTwo">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
-                            <span class="circle-numbering">2</span><span class="accordion-title">Etape 2</span>
+                            <span class="circle-numbering">2</span><span class="accordion-title">Nous vous rappelons</span>
                         </span>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
                     <div class="accordion-body">
-                        Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.
-                    </div>
+                        Après avoir pris connaissance de votre panne nous vous rappelons pour évaluer ensemble votre besoin et convenir d'un rendez-vous.                    </div>
                 </div>
             </div> <!-- end of item -->
 
             <div class="item">
                 <div id="headingThree">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
-                            <span class="circle-numbering">3</span><span class="accordion-title">Etape 3</span>
+                            <span class="circle-numbering">3</span><span class="accordion-title">Nous réparons</span>
                         </span>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
                     <div class="accordion-body">
-                        An awesome online marketing plan won't save your bad product but paired with a good product, the sky is the limit for what can be achieved.
+                            Sur place ou à distance.
                     </div>
                 </div>
             </div> <!-- end of item -->
@@ -298,6 +293,8 @@
     </div> <!-- end of area-2 -->
     </div> <!-- end of accordion -->
     <!-- end of details 1 -->
+
+
 
     <!-- About -->
     <div id="about" class="counter">
@@ -334,23 +331,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <div class="section-title">CALL ME</div>
-                        <h2 class="white">Have Us Contact You By Filling And Submitting The Form</h2>
-                        <p class="white">You are just a few steps away from a personalized offer. Just fill in the form and send it to us and we'll get right back with a call to help you decide what service package works.</p>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">It's very easy just fill in the form so we can call</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">During the call we'll require some info about the company</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Don't hesitate to email us for any questions or inquiries</div>
-                            </li>
-                        </ul>
+                        <div class="section-title">CONTACT</div>
+                        <h2 class="white">Vous pouvez nous contacter via le formulaire ci-contre.</h2>
+                        <p class="white">Nous vous recontactons rapidemment.</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -359,12 +342,17 @@
                     <form id="callMeForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="lname" name="lname" required>
-                            <label class="label-control" for="lname">Name</label>
+                            <label class="label-control" for="lname">NOM</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="fname" name="fname" required>
+                            <label class="label-control" for="lname">Prénom</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="lphone" name="lphone" required>
-                            <label class="label-control" for="lphone">Phone</label>
+                            <label class="label-control" for="lphone">Téléphone</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
@@ -374,20 +362,30 @@
                         </div>
                         <div class="form-group">
                             <select class="form-control-select" id="lselect" required>
-                                <option class="select-option" value="" disabled selected>Interested in...</option>
-                                <option class="select-option" value="Off The Ground">Off The Ground</option>
-                                <option class="select-option" value="Accelerated Growth">Accelerated Growth</option>
-                                <option class="select-option" value="Market Domination">Market Domination</option>
+                                <option class="select-option" value="" disabled selected>Sélectionnez votre centre</option>
+                                <option class="select-option" value="Off The Ground">Centre 1</option>
+                                <option class="select-option" value="Accelerated Growth">Centre 2</option>
+                                <option class="select-option" value="Market Domination">Centre 3</option>
                             </select>
                             <div class="help-block with-errors"></div>
                         </div>
+
+                        <div class="form-group">
+                            <label class="label-control">Message</label>
+                            <textarea placeholder="Décrivez-nous ici votre problème"></textarea>
+                            <div class="help-block with-errors"></div>
+
+
+                        </div>
                         <div class="form-group checkbox white">
-                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>I agree with Aria's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms & Conditions</a>
+                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>J'approuve les <a class="white" href="privacy-policy.html">termes et conditions</a> et la <a class="white" href="terms-conditions.html">politique de confidentialité</a>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CALL ME</button>
+                            <button type="submit" class="form-control-submit-button">ENVOYER</button>
                         </div>
+
+                        <!--todo ??-->
                         <div class="form-message">
                             <div id="lmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
@@ -400,219 +398,59 @@
     </div> <!-- end of form-1 -->
     <!-- end of call me -->
 
+    <div id="centers" class="basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <div class="section-title">CENTRES</div>
+                    <h2>Tous nos centres Onlineformapro</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address"><i class="fas fa-map-marker-alt"></i> 19 rue du Praley, Espace de la Motte, 70000 VESOUL</li>
+                        <li><i class="fas fa-phone"></i> +33(0)3 84 76 52 44</li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:projet@onlineformapro.com"> projet@onlineformapro.com</a></li>
+                    </ul>
+                    <h3>Suivez-nous sur nos réseaux sociaux</h3>
 
-    <!-- Projects -->
-	<div id="projects" class="filter">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">MEDIAS</div>
-                    <h2>ON PARLE DE NOUS</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="grid">
-                        <div class="element-item development">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 1</span></div><img src="images/project-1.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item development">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 2</span></div><img src="images/project-2.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design development marketing">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 3</span></div><img src="images/project-3.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design development marketing">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 4</span></div><img src="images/project-4.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design development marketing seo">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 5</span></div><img src="images/project-5.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing seo">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 6</span></div><img src="images/project-6.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 7</span></div><img src="images/project-7.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#"><div class="element-item-overlay"><span>TITRE 8</span></div><img src="images/project-8.jpg" alt="alternative"></a>
-                        </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
-    <!-- end of projects -->
-
-    <!-- Team -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Notre équipe</h2>
-                    <p class="p-heading">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-1.png" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large">Ethan Martin</p>
-                        <p class="job-title">Formateur</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-2.png" alt="alternative">
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large">Elise Durand</p>
-                        <p class="job-title">Apprenante</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-3.png" alt="alternative">
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large">Jules Rousseau</p>
-                        <p class="job-title">Apprenant</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-4.png" alt="alternative">
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large">Alice Meunier</p>
-                        <p class="job-title">Apprenante</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of team -->
-
-    <!-- Footer -->
-    <div class="footer">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">CENTRES</div>
-                        <h2>Tous nos centres Onlineformapro</h2>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>19 rue du Praley, Espace de la Motte, 70000 VESOUL</li>
-                            <li><i class="fas fa-phone"></i>+33(0)3 84 76 52 44</li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:projet@onlineformapro.com">projet@onlineformapro.com</a></li>
-                        </ul>
-                        <h3>Suivez-nous sur nos réseaux sociaux</h3>
-
-                        <span class="fa-stack">
+                    <span class="fa-stack">
                             <a href="#https://www.facebook.com/Onlineformapro/">
                                 <span class="hexagon"></span>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
+                    <span class="fa-stack">
                             <a href="#https://twitter.com/onlineformapro?lang=fr">
                                 <span class="hexagon"></span>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
+                    <span class="fa-stack">
                             <a href="#https://www.linkedin.com/company/onlineformapro/">
                                 <span class="hexagon"></span>
                                 <i class="fab fa-linkedin-in fa-stack-1x"></i>
                             </a>
                         </span>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-    </div> <!-- end of footer -->
-    <!-- end of footer -->
-
-                <!-- Copyright -->
-                <div class="copyright">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <p class="p-small">Copyright © 2021 <a href="https://inovatik.com">Template by Inovatik</a></p>
-                            </div> <!-- end of col -->
-                        </div> <!-- enf of row -->
-                    </div> <!-- end of container -->
-                </div> <!-- end of copyright -->
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+            </div>
 
 
-    <!-- Scripts -->
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="p-small">Copyright © 2020</p>
+                        </div> <!-- end of col -->
+                    </div> <!-- enf of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of copyright -->
+            <!-- end of copyright -->
+
+
+
+                <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
